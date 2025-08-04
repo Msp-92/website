@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-utilities.rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+
+<body>
+    <header>
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="main-menu">
+                        <ul>
+                            <li><a>خانه</a></li>
+                            <li><a>شبکه های اجتماعی</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <!-- end menu -->
+    </header>
+    {% block content %}
+    {% endblock content %}
+    <script src="js/jcuery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

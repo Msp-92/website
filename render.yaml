@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: MSP
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
+      python manage.py migrate
+    startCommand: gunicorn config.wsgi
+    autoDeploy: true
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: config.settings
+      - key: PYTHON_VERSION
+        value: 3.10
+      - key: SECRET_KEY
+        value: s7+pns15far95h0y$i7+xhjec=)1=iiryl)wd(nbfg6)yt_6$j

@@ -25,8 +25,21 @@ SECRET_KEY = os.getenv('SECRET_KEY', 's7+pns15far95h0y$i7+xhjec=)1=iiryl)wd(nbfg
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = True
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '.onrender.com').split(',')
+default_allowed_hosts = [
+    'localhost',
+    '127.0.0.1',
+    '[::1]',
+    '.onrender.com',  # اجازه به همه زیر دامنه‌های render
+]
+
+env_allowed_hosts = os.getenv('ALLOWED_HOSTS')
+
+if env_allowed_hosts:
+    ALLOWED_HOSTS = env_allowed_hosts.split(',')
+else:
+    ALLOWED_HOSTS = default_allowed_hosts
 
 
 # Application definition

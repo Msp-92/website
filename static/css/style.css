@@ -2,13 +2,15 @@
 
 @font-face {
     font-family: 'Vazirmatn';
-    src: url(https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap);
+    src: "{% static 'fonts/Vazirmatn-Regular.woff2' %}";
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+a,h1,h2,h3,h4,h5,h6{
     font-family: 'Vazirmatn';
 }
 body{

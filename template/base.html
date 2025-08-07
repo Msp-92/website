@@ -6,7 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/bootstrap-utilities.rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap-icons.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
@@ -77,8 +78,44 @@
     </div>
         <!-- end menu -->
     </header>
-    {% block content %}
+
+      {% block content %}
     {% endblock content %}
+
+<div class="footer_box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                <div class="col-md-4 col-sm-4">
+                <div class="footer-menu">
+                    <span class="title">دسترسی سریع</span>
+                </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                <div class="footer-menu">
+                    <span class="title">دسته بندی موضوعی</span>
+                </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                <div class="footer-menu">
+                    <span class="title">دسترسی سریع</span>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-12"> 
+                <div class="footer_social">
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="copy-r">
+                <span>
+                &copy; حقوق انتشار برای چراغ محفوط است
+                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <script src="{% static 'js/jcuery.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </body>

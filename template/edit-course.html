@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block title %}
+    
+{% endblock title %}
+    
+{% block content %}
+    <section class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title mb-4"><i class="fas fa-edit me-2"></i>ویرایش دوره</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="courseTitle" class="form-label">عنوان دوره</label>
+                            <input type="text" class="form-control" id="courseTitle" value="آموزش Django">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="courseCategory" class="form-label">دسته‌بندی</label>
+                            <select class="form-select" id="courseCategory">
+                                <option value="1" selected>برنامه‌نویسی</option>
+                                <option value="2">طراحی وب</option>
+                                <option value="3">گرافیک</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="courseDescription" class="form-label">توضیحات دوره</label>
+                            <textarea class="form-control" id="courseDescription" rows="6">این دوره به شما آموزش می‌دهد چگونه Django را از صفر تا صد یاد بگیرید.</textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="coursePrice" class="form-label">قیمت (تومان)</label>
+                            <input type="number" class="form-control" id="coursePrice" value="250000">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="courseImage" class="form-label">تصویر شاخص دوره</label>
+                            <input class="form-control" type="file" id="courseImage">
+                            <small class="text-muted">تصویر فعلی: <a href="#">preview.jpg</a></small>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="publishCourse" checked>
+                            <label class="form-check-label" for="publishCourse">
+                                منتشر شود
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-save me-2"></i>ذخیره تغییرات</button>
+                        <a href="/courses" class="btn btn-secondary"><i class="fas fa-times me-2"></i>انصراف</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
+    

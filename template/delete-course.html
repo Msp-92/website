@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+    
+{% endblock title %}
+    
+{% block content %}
+    <section class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-danger">
+                <div class="card-body text-center">
+                    <h4 class="card-title text-danger"><i class="fas fa-exclamation-triangle me-2"></i>حذف دوره</h4>
+                    <p>آیا مطمئن هستید که می‌خواهید دوره <strong>آموزش Django</strong> را حذف کنید؟ این عملیات غیرقابل بازگشت است.</p>
+                    <form>
+                        <button type="submit" class="btn btn-danger me-2"><i class="fas fa-trash me-1"></i>حذف</button>
+                        <a href="/courses" class="btn btn-secondary"><i class="fas fa-times me-1"></i>انصراف</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}
+    

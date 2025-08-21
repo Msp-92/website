@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}
+    
+{% endblock title %}
+    
+{% block content %}
+    <section class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title mb-4"><i class="fas fa-edit me-2"></i>ویرایش پست</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="postTitle" class="form-label">عنوان پست</label>
+                            <input type="text" class="form-control" id="postTitle" value="عنوان فعلی پست">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="postCategory" class="form-label">دسته‌بندی</label>
+                            <select class="form-select" id="postCategory">
+                                <option value="1" selected>آموزشی</option>
+                                <option value="2">اخبار</option>
+                                <option value="3">تجربه‌ها</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="postContent" class="form-label">محتوای پست</label>
+                            <textarea class="form-control" id="postContent" rows="8">متن فعلی پست</textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="postImage" class="form-label">تصویر شاخص</label>
+                            <input class="form-control" type="file" id="postImage">
+                            <small class="text-muted">تصویر فعلی: post_image.jpg</small>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="publishCheck" checked>
+                            <label class="form-check-label" for="publishCheck">
+                                منتشر شود
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-success"><i class="fas fa-save me-2"></i>ذخیره تغییرات</button>
+                        <a href="/posts" class="btn btn-secondary"><i class="fas fa-times me-2"></i>انصراف</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
+    

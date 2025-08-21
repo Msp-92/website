@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block title %}
+    
+{% endblock title %}
+    
+{% block content %}
+    <section class="container my-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">دوره برنامه‌نویسی وب مقدماتی</h3>
+                    <p class="text-muted">مدرس: علی رضایی | مدت زمان: 10 ساعت</p>
+                </div>
+            </div>
+
+            <section class="course-lesson mb-4">
+                <h4 class="mb-3">درس‌ها</h4>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        <i class="fas fa-play-circle me-2"></i> درس 1: معرفی دوره و نصب ابزارها
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-play-circle me-2"></i> درس 2: مبانی HTML و ساختار صفحات
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-play-circle me-2"></i> درس 3: استایل‌دهی با CSS
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-play-circle me-2"></i> درس 4: جاوااسکریپت مقدماتی
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-play-circle me-2"></i> درس 5: پروژه عملی: ساخت یک وب‌سایت ساده
+                    </a>
+                </div>
+            </section>
+
+            <section class="video-player mb-4">
+                <h4 class="mb-3">ویدیو آموزشی</h4>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="ویدیو دوره" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section class="lesson-description">
+                <h4>توضیحات درس</h4>
+                <p>در این درس، ابزارهای مورد نیاز برای شروع برنامه‌نویسی وب معرفی می‌شوند و نحوه نصب و تنظیم آن‌ها به صورت مرحله به مرحله آموزش داده می‌شود. پس از این درس، شما آماده شروع HTML خواهید بود.</p>
+            </section>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="mb-4">
+                <h5>پیشرفت دوره</h5>
+                <div class="progress mb-2">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h5>درس‌های بعدی</h5>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">درس 2: مبانی HTML و ساختار صفحات</a></li>
+                    <li class="list-group-item"><a href="#">درس 3: استایل‌دهی با CSS</a></li>
+                    <li class="list-group-item"><a href="#">درس 4: جاوااسکریپت مقدماتی</a></li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h5>نظرات کاربران</h5>
+                <div>
+                    <strong>سارا محمدی:</strong>
+                    <p>درس اول خیلی خوب و قابل فهم بود.</p>
+                </div>
+                <div>
+                    <strong>امیر حسینی:</strong>
+                    <p>ویدیوها کوتاه و مفید هستند.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
+    

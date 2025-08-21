@@ -45,6 +45,11 @@ else:
 # Application definition
 
 INSTALLED_APPS = [
+    # admin lte
+    "adminlte3",
+    "adminlte3_theme",
+    
+    # django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -32,6 +32,7 @@ default_allowed_hosts = [
     '127.0.0.1',
     '[::1]',
     '.onrender.com',  # اجازه به همه زیر دامنه‌های render
+    '.runflare.run'
 ]
 
 env_allowed_hosts = os.getenv('ALLOWED_HOSTS')

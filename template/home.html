@@ -6,7 +6,52 @@
 {% endblock title %}
     
 {% block content %}
-    <h1>محمد صالح پیروی</h1>
-    <h3>برنامه نویس موبایل و طراح سایت</h3>
+    <!-- بنر معرفی -->
+<section class="bg-light text-center py-5">
+    <div class="container">
+        <h2 class="mb-3">به دنیای آموزش خوش آمدید!</h2>
+        <p class="mb-4">دوره‌های تخصصی و حرفه‌ای را با اساتید برجسته بیاموزید.</p>
+        <a href="courses.html" class="btn btn-primary btn-lg">مشاهده دوره‌ها</a>
+    </div>
+</section>
+
+<!-- بخش دوره‌ها -->
+<section class="py-5">
+    <div class="container">
+        <h3 class="mb-4">دوره‌های محبوب</h3>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/course1.jpg" class="card-img-top" alt="دوره ۱">
+                    <div class="card-body">
+                        <h5 class="card-title">دوره برنامه‌نویسی پایتون</h5>
+                        <p class="card-text">شروع از صفر تا حرفه‌ای، پروژه محور.</p>
+                        <a href="course-preview.html" class="btn btn-outline-primary">پیشنمایش دوره</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/course2.jpg" class="card-img-top" alt="دوره ۲">
+                    <div class="card-body">
+                        <h5 class="card-title">دوره طراحی وب با HTML & CSS</h5>
+                        <p class="card-text">مبانی تا پیشرفته طراحی سایت واکنش‌گرا.</p>
+                        <a href="course-preview.html" class="btn btn-outline-primary">پیشنمایش دوره</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/course3.jpg" class="card-img-top" alt="دوره ۳">
+                    <div class="card-body">
+                        <h5 class="card-title">دوره React & JavaScript</h5>
+                        <p class="card-text">ساخت اپلیکیشن‌های مدرن و SPA با React.</p>
+                        <a href="course-preview.html" class="btn btn-outline-primary">پیشنمایش دوره</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock content %}
     

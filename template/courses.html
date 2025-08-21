@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    دوره ها
+{% endblock title %}
+    
+{% block content %}
+    
+<section class="container my-5">
+    <h2 class="mb-4">دوره‌های آموزشی</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="images/course1.jpg" class="card-img-top" alt="دوره 1">
+                <div class="card-body">
+                    <h5 class="card-title">برنامه‌نویسی پایتون</h5>
+                    <p class="card-text">یادگیری پایتون از صفر تا پیشرفته با پروژه‌های عملی.</p>
+                    <a href="course-detail.html" class="btn btn-outline-primary"><i class="fas fa-eye"></i> جزئیات دوره</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="images/course2.jpg" class="card-img-top" alt="دوره 2">
+                <div class="card-body">
+                    <h5 class="card-title">طراحی وب با HTML و CSS</h5>
+                    <p class="card-text">مبانی طراحی وب و ایجاد صفحات زیبا و واکنش‌گرا.</p>
+                    <a href="course-detail.html" class="btn btn-outline-primary"><i class="fas fa-eye"></i> جزئیات دوره</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="images/course3.jpg" class="card-img-top" alt="دوره 3">
+                <div class="card-body">
+                    <h5 class="card-title">جاوااسکریپت برای وب</h5>
+                    <p class="card-text">یادگیری اسکریپت نویسی سمت کاربر و تعامل با صفحات وب.</p>
+                    <a href="course-detail.html" class="btn btn-outline-primary"><i class="fas fa-eye"></i> جزئیات دوره</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="#" class="btn btn-primary"><i class="fas fa-graduation-cap"></i> مشاهده همه دوره‌ها</a>
+    </div>
+
+</section>
+{% endblock content %}
+    
+

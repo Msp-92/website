@@ -34,11 +34,10 @@
                             
                             {% if user.picture.url %}
                                 <img src="{{ user.picture.url }}" alt="{{ user.username }}" class="user-avatar">
+                            {% else %}
+                                <img src="{% static 'img/avatar5.png' %}" alt="">
                             {% endif %}
-                                
                             
-                        {% else %}
-                            <img src="statiز/images/default-avatar.png'" alt="Guest" class="user-avatar">
                         {% endif %}
                     </div>
                 </div>

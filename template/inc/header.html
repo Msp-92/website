@@ -1,0 +1,62 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style-theme.css' %}">
+<div class="container">
+        <div class="section_nav">
+            <div class="left_nav d-flex align-items-center">
+                <div class="section-log d-flex align-items-center">
+                    <div class="box-img-log">
+                        <img src="{% static 'img/logo.png' %}" alt="">
+                    </div>
+                    <h3>چراغ</h3>
+                </div>
+            </div>
+            <div class="center_nav">
+                <ul class="d-flex align-items-center">
+                    <li><a href="{% url 'home' %}" class="">خانه</a></li>
+                    <li><a href="{% url 'blog' %}">وبلاگ</a></li>
+                    <li><a href="#">دوره ها</a></li>
+                    
+                    {% if user.is_authenticated %}
+                    {% else %}
+                        <li><a href="{% url 'login' %}">ورود|ثبت‌نام</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            <div class="right_nav">
+                <div class="group_icon">
+                </div>
+                <div class="user_section">
+                    <div class="status-connection">
+                        online
+                    </div>
+                    <div class="profile_user">
+                        {% if user.is_authenticated %}
+                            
+                            {% if user.picture.url %}
+                                <img src="{{ user.picture.url }}" alt="{{ user.username }}" class="user-avatar">
+                            {% endif %}
+                                
+                            
+                        {% else %}
+                            <img src="statiز/images/default-avatar.png'" alt="Guest" class="user-avatar">
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="nav_mobile">
+                <input type="checkbox" id="toggle_nav" hidden>
+                <label for="toggle_nav" class="label_toggle_nav">
+                    <span class="line line_top"></span>
+                    <span class="line line_mid"></span>
+                    <span class="line line_bottom"></span>
+                </label>
+                <ul class="list_nav_mobile">
+                        <li><a href="#" class="active">Dashboard</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>

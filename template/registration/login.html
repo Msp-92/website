@@ -1,25 +1,27 @@
 {% extends 'base.html' %}
 
+{% block title %}
+    ورود
+{% endblock title %}
+    
 {% block content %}
+
+    <!-- <form method="post" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">Logout</button>
+</form> -->
+
+
     <section class="container my-5">
     <div class="row justify-content-center">
         <div class="col-md-5">
             <div class="card shadow-sm">
                 <div class="card-body">
                     <h4 class="card-title text-center mb-4"><i class="fas fa-sign-in-alt me-2"></i>ورود به حساب</h4>
-                    <form>
+                    <form method="post" action="{% url 'login' %}">
                         <div class="mb-3">
-                            <label for="email" class="form-label">ایمیل</label>
-                            <input type="email" class="form-control" id="email" placeholder="ایمیل خود را وارد کنید">
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">رمز عبور</label>
-                            <input type="password" class="form-control" id="password" placeholder="رمز عبور">
-                        </div>
-                        <div class="form-check mb-3">
-                            <input type="checkbox" class="form-check-input" id="rememberMe">
-                            <label class="form-check-label" for="rememberMe">مرا به خاطر بسپار</label>
-                        </div>
+                         {% csrf_token %}
+                         {{ form.as_p }}   
                         <button type="submit" class="btn btn-primary w-100"><i class="fas fa-sign-in-alt me-2"></i>ورود</button>
                     </form>
                     <p class="text-center mt-3">

@@ -8,36 +8,20 @@
     <section class="container my-5">
     <h2 class="mb-4">آخرین مقالات و اخبار</h2>
     <div class="row">
+        
+    {% for post in post_list %}
+            
         <div class="col-md-4 mb-4">
             <div class="card shadow-sm">
-                <img src="images/post1.jpg" class="card-img-top" alt="پست 1">
+                <img src="{{ post.picture.url }}" class="card-img-top" alt="{{ post.title }}">
                 <div class="card-body">
-                    <h5 class="card-title">چگونه در برنامه‌نویسی پیشرفت کنیم</h5>
-                    <p class="card-text">روش‌ها و تکنیک‌هایی که باعث می‌شود شما سریع‌تر و حرفه‌ای‌تر یاد بگیرید.</p>
-                    <a href="post-detail.html" class="btn btn-outline-primary"><i class="fas fa-eye"></i> مطالعه مطلب</a>
+                    <a href="{% url 'post-detail' post.slug %}"><h5 class="card-title">{{ post.title }}</h5></a>
+                    <p class="card-text"></p>
+                    <a href="{% url 'post-detail' post.slug %}" class="btn btn-outline-primary"></i>ادامه مطلب</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card shadow-sm">
-                <img src="images/post2.jpg" class="card-img-top" alt="پست 2">
-                <div class="card-body">
-                    <h5 class="card-title">۵ ابزار ضروری برای توسعه‌دهندگان وب</h5>
-                    <p class="card-text">ابزارهایی که هر توسعه‌دهنده وب حرفه‌ای باید با آن‌ها آشنا باشد.</p>
-                    <a href="post-detail.html" class="btn btn-outline-primary"><i class="fas fa-eye"></i> مطالعه مطلب</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card shadow-sm">
-                <img src="images/post3.jpg" class="card-img-top" alt="پست 3">
-                <div class="card-body">
-                    <h5 class="card-title">مبانی امنیت در وب</h5>
-                    <p class="card-text">آشنایی با اصول امنیت و جلوگیری از آسیب‌پذیری‌های رایج.</p>
-                    <a href="post-detail.html" class="btn btn-outline-primary"><i class="fas fa-eye"></i> مطالعه مطلب</a>
-                </div>
-            </div>
-        </div>
+    {% endfor %}
     </div>
 
     <div class="text-center mt-4">

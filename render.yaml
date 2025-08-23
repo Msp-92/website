@@ -15,3 +15,5 @@ services:
         value: 3.10
       - key: SECRET_KEY
         value: s7+pns15far95h0y$i7+xhjec=)1=iiryl)wd(nbfg6)yt_6$j
+      - key: DEBUG
+        value: True

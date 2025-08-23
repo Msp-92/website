@@ -1,29 +1,14 @@
-
-/*
-Theme Name: WpShow
-Text Domain: WpShow_1
-Version: 1.0.0
-Requires at least: 4.7
-Requires PHP: 5.2.4
-Description: Seo90 WpShow Custom Theme
-Author: Seo90
-Author URI: https://seo90.ir
-Theme URI: https://seo90.ir
-*/
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap') ;
 
 *{
     padding: 0;
     margin: 0;
     outline: 0;
 }
-@font-face{
-    font-family: 'seo90';
-    src: url('fonts/IRANSansWeb\(FaNum\).woff') format('woff');
-}
 body{
     background-color: #fbfbfb;
     direction: rtl;
-    font-family: 'seo90';
+    font-family: 'Vazirmatn';
 }
 li{
     list-style: none;
